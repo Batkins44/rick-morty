@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/%3Crick-morty%3E/static/css/main.cfda8877.chunk.css",
-    "main.js": "/%3Crick-morty%3E/static/js/main.2e7c4a2b.chunk.js",
-    "main.js.map": "/%3Crick-morty%3E/static/js/main.2e7c4a2b.chunk.js.map",
-    "runtime~main.js": "/%3Crick-morty%3E/static/js/runtime~main.150fbae3.js",
-    "runtime~main.js.map": "/%3Crick-morty%3E/static/js/runtime~main.150fbae3.js.map",
-    "static/js/2.b0d4d72d.chunk.js": "/%3Crick-morty%3E/static/js/2.b0d4d72d.chunk.js",
-    "static/js/2.b0d4d72d.chunk.js.map": "/%3Crick-morty%3E/static/js/2.b0d4d72d.chunk.js.map",
-    "index.html": "/%3Crick-morty%3E/index.html",
-    "precache-manifest.28a62bcbaddeebf72a0379dd1448ab26.js": "/%3Crick-morty%3E/precache-manifest.28a62bcbaddeebf72a0379dd1448ab26.js",
-    "service-worker.js": "/%3Crick-morty%3E/service-worker.js",
-    "static/css/main.cfda8877.chunk.css.map": "/%3Crick-morty%3E/static/css/main.cfda8877.chunk.css.map"
+    "main.css": "/rick-morty/static/css/main.cfda8877.chunk.css",
+    "main.js": "/rick-morty/static/js/main.5c73da61.chunk.js",
+    "main.js.map": "/rick-morty/static/js/main.5c73da61.chunk.js.map",
+    "runtime~main.js": "/rick-morty/static/js/runtime~main.6bffb73a.js",
+    "runtime~main.js.map": "/rick-morty/static/js/runtime~main.6bffb73a.js.map",
+    "static/js/2.b0d4d72d.chunk.js": "/rick-morty/static/js/2.b0d4d72d.chunk.js",
+    "static/js/2.b0d4d72d.chunk.js.map": "/rick-morty/static/js/2.b0d4d72d.chunk.js.map",
+    "index.html": "/rick-morty/index.html",
+    "precache-manifest.73f288dfe68ddf8efecabbb7e99966d7.js": "/rick-morty/precache-manifest.73f288dfe68ddf8efecabbb7e99966d7.js",
+    "service-worker.js": "/rick-morty/service-worker.js",
+    "static/css/main.cfda8877.chunk.css.map": "/rick-morty/static/css/main.cfda8877.chunk.css.map"
   }
 }
