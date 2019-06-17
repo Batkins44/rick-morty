@@ -3,7 +3,7 @@ import React from 'react';
 
 const Form = props => (
     <div>
-        {props.madeChoice == false &&
+        {props.madeChoice === false &&
     <form onSubmit={props.getImg}>
     <input type="text" name="name" placeholder="Character Name..."></input>
     <button>Get Character</button>
@@ -11,7 +11,7 @@ const Form = props => (
     </form>
         }
         {
-            props.madeChoice == true &&
+            props.madeChoice === true &&
             <div></div>
             }
     </div>
