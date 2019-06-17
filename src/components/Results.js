@@ -10,7 +10,7 @@ const Results = props => (
                     <div>
                         Character:
                         { item.name}<br/> 
-                        <img src={item.image}></img><br />
+                        <img src={item.image} alt={item.name}></img><br />
                         <button onClick={() => { props.chooseChar(item) }}>Choose {item.name}</button>
                         <hr />
                     </div> 

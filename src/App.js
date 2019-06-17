@@ -3,13 +3,15 @@ import './App.css';
 import Titles from './components/Titles';
 import Results from './components/Results';
 import Form from './components/Form';
+import Game from './components/Game';
 
 class App extends React.Component {
   state = {
     results:undefined,
     error:undefined,
     chosenChar:undefined,
-    madeChoice:false
+    madeChoice:false,
+    startedGame: false
 
   }
   getImg = async (e) => {
@@ -23,7 +25,10 @@ class App extends React.Component {
         results: data.results,
         chosenChar: undefined,
         madeChoice:false,
-        error:undefined
+        error:undefined,
+        startedGame: false,
+        begin:false
+        
       })
       console.log(this.state);
     }else{
@@ -31,7 +36,9 @@ class App extends React.Component {
         results: undefined,
         chosenChar: undefined,
         madeChoice:false,
-        error:"Please type  name to search"
+        error:"Please type  name to search",
+        startedGame: false,
+        begin:false
       })
     }
   }
@@ -42,15 +49,43 @@ class App extends React.Component {
       results:undefined,
       chosenChar:chosen,
       madeChoice:true,
-      error:undefined
+      error:undefined,
+      startedGame:false,
+      begin:false
     })
+  }
+
+  startGame = (props) => {
+
+    this.setState({
+      results:undefined,
+      chosenChar:props.chosenChar,
+      madeChoice:true,
+      error:undefined,
+      startedGame:true,
+      begin:false
+    })
+    console.log("yeah bitch start game", this.state);
+  }
+  onwardInit = (props) => {
+    this.setState({
+      results:undefined,
+      chosenChar:props.chosenChar,
+      madeChoice:true,
+      error:undefined,
+      startedGame:true,
+      begin:true
+    })
+    console.log(this.state, "onward state")
   }
   render () {
     return(
     <div className="App">
       <Titles 
       madeChoice={this.state.madeChoice}
-      chosenChar={this.state.chosenChar} />
+      chosenChar={this.state.chosenChar}
+      startGame={this.startGame}
+      startedGame={this.state.startedGame} />
       <Form 
       getImg={this.getImg}
       madeChoice={this.state.madeChoice} />
@@ -60,6 +95,14 @@ class App extends React.Component {
       chooseChar={this.chooseChar}
       results={this.state.results}
       error={this.state.error}
+      />
+      <Game
+      startedGame={this.state.startedGame}
+      chosenChar={this.state.chosenChar}
+      onwardInit={this.onwardInit}
+      begin={this.state.begin}
+
+
       />
     </div>
     )};
